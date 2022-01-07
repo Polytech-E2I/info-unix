@@ -1,4 +1,4 @@
-
+#!/bin/python
 
 user_input = input("Entrez plusieurs mots : ")
 
