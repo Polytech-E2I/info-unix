@@ -13,5 +13,8 @@ def intouchable(x:int) -> bool:
 
     return True
 
-user_input = int(input("Entrez un nombre : "))
+user_input = -1
+while user_input < 0 or user_input > 125:
+    user_input = int(input("Entrez un nombre entre 0 et 125 : "))
+
 print("{} est intouchable".format(user_input) if intouchable(user_input) else "{} n'est pas intouchable".format(user_input))
